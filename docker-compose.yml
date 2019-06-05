@@ -9,12 +9,13 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./elasticsearch/data
     ports:
       - "19200:9200"
       - "19300:9300"
     environment:
       ES_JAVA_OPTS: "-Xmx512m -Xms512m"
-      ELASTIC_PASSWORD: changeme
+      ELASTIC_PASSWORD: Percon310
     networks:
       - elk
 

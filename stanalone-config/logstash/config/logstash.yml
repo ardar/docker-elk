@@ -2,8 +2,9 @@
 ## Default Logstash configuration from logstash-docker.
 ## from https://github.com/elastic/logstash-docker/blob/master/build/logstash/config/logstash-full.yml
 #
-http.host: "0.0.0.0"
-xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:29200" ]
+http.host: "0"
+xpack.monitoring.enabled: false
+#xpack.monitoring.elasticsearch.hosts: [ "http://speed.bientity.com:29200" ]
 
 ## X-Pack security credentials
 #

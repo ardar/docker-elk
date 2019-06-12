@@ -4,8 +4,8 @@
 #
 server.name: kibana
 server.host: "0.0.0.0"
-elasticsearch.hosts: [ "http://elasticsearch:29200" ]
-xpack.monitoring.ui.container.elasticsearch.enabled: true
+elasticsearch.hosts: [ "http://speed.bientity.com:29200" ]
+xpack.monitoring.ui.container.elasticsearch.enabled: false
 
 ## X-Pack security credentials
 #
